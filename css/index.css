@@ -1,0 +1,254 @@
+*{ 
+    box-sizing: border-box;
+}
+
+h1{ font-size: 90px;
+font-weight: 900;
+font-family: 'Times New Roman', Times, serif;
+}
+
+h2 { font-size: 50px}
+
+html{ 
+    scroll-behavior: smooth;
+    
+}
+body{ 
+    margin: 0;
+    background-color:whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button { 
+    font-size: 2em;
+    font-weight: bold; 
+    padding: 10px 300xp;
+    border: 1px solid rgba(0,0,0,0,5);
+    color: aliceblue;
+    background-color: #a723c2;
+    border-color: blueviolet;
+    box-shadow: rgb(181, 114, 245);
+    
+   }
+
+p {
+    color: #333333;
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    line-height: 120%;
+
+    }
+.Container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .Container { background-color: rgb(240, 240, 240);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+header .logo { 
+    margin: 0; 
+    padding-top: 5px;
+    font-weight: bold;
+    color: rgb(96, 43, 146);
+    font-size: 1.5em;
+}
+
+header nav {
+    padding-bottom: 20px;
+}
+header a { 
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+header a:hover{ 
+    color: rgb(114, 20, 202);
+}
+#hero {
+    font-size: xx-large;
+    display: flex;
+    align-items: center    ;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+   background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+   )
+   ,url("https://www.grandespymes.com.ar/wp-content/uploads/2020/10/Trucos-y-consejos-para-mantener-unido-a-tu-equipo-de-trabajo.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+#SobreMi {
+    font-size: xx-large;
+    display: flex;
+    align-items: center    ;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40vh;
+  background-color: rgba(167, 39, 199, 0.5);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+margin: 0;
+padding-bottom: 10px;
+}
+
+#SobreMi p{
+   font-size: xx-large;}
+
+
+#Objetivos {
+    height: 50%;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   padding-left: 10%;
+   padding-right: 10%;
+   text-align: center;
+   font-size: xx-large;
+}
+
+
+  
+#Footer {
+    border-top: solid;
+    height: 20vh;
+    width: 100%;
+
+}
+#Footer .Container  {
+    height: 150px;
+}
+
+#mySidenav a {
+    position: fixed; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 16.5px; 
+    color: white; 
+    border-radius: 0 5px 5px 0;
+    text-align: center center;
+    background-color: rgb(255, 103, 103);
+ }
+  #mySidenav a:hover {
+    left: 0; 
+  }
+  #contact {
+    top: 200px;
+}
+
+
+#ExperienciaLaboral{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 8%;
+}
+#TituloExperienciaLaboral{
+    text-align: center;
+    margin-bottom: 0;
+    border-top: solid ;
+}
+
+#ExperienciaLaboral .tarjeta {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    padding: auto;
+    margin: 10px;
+    
+}
+#ExperienciaLaboral .tarjeta .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#ExperienciaLaboral .tarjeta .Delantera{ 
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+#ExperienciaLaboral .tarjeta .Delantera h3{ 
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#ExperienciaLaboral .tarjeta .Delantera img{ 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+}
+
+#ExperienciaLaboral .tarjeta .Trasera{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(106, 55, 155);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#ExperienciaLaboral .tarjeta .Trasera .link{
+    height: 50px;
+    line-height: 50px;
+}
+#ExperienciaLaboral .tarjeta .Trasera .link a{
+    color: #fff;
+}
+#ExperienciaLaboral .tarjeta:hover .Delantera{
+transform: perspective(600px) rotateY(180deg);
+}
+#ExperienciaLaboral .tarjeta:hover .Trasera{
+    transform: perspective(600px) rotateY(360deg);
+    }
+
+@media  (min-width: 720px){
+    header .Container{
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;  
+        width: 100%; 
+    }
+    header nav  {
+        padding-bottom: 0;
+        flex-direction: row;
+        padding-right: 15px;
+    }
+    #hero {
+        height: 100vh;
+    }
+   
+    
+  
+    #Experiencia .Carta {    
+        
+        height: fit-content;
+    height: 200%;
+    }
+    }
